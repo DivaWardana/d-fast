@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'fast Restourant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/icon.jpg">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">D'fast</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#menu1">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="banner">
+        <div class="content">
+            <p>Restourant</p>
+            <p class="banner-content">Fast Food</p>
+            <a href="#menu"><span>Order now!</span></a>
+        </div>
+    </div>
+    
+    <section id="story">
+        <div class="contentSt">
+            <h2 class="heading">Story</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestiae tempore eum nostrum sit totam consequatur
+                eligendi id alias veritatis officiis impedit minima beatae fugiat labore assumenda, quidem minus tenetur?<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam repudiandae suscipit molestiae. Voluptas minima nihil eum, officia,
+                illo asperiores, voluptates deserunt praesentium numquam nemo quia dolores impedit accusamus. Soluta?
+            </p>
+        </div>
+        <div class="imgSt"></div>
+    </section>
+
+    <div class="menu" id="menu1">
+        <h1 class="heading">Menu</h1>
+        <aside>
+            <article class="card">
+                <section>
+                    <h3 class="border">Popular food</h3>
+                    <table width="100%" style="text-align: left;">
+                        <tr>
+                            <th>No</th>
+                            <th>Name Food</th>
+                            <th style="text-align: right;">Price</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Burger</td>
+                            <td style="text-align: right;">20.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pizza</td>
+                            <td style="text-align: right;">50.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Steak</td>
+                            <td style="text-align: right;">75.000</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+        <section id="menu">
+            <div class="card">
+                <div class="imgMn">
+                    <img src="./assets/img/f1.jpg" alt="">
+                </div>
+                <div class="contentMn">
+                        <h2>Desert</h2>
+                        <p>Rp. 20.000</p>
+                        <p class="top10">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><span>Buy</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgMn">
+                    <img src="./assets/img/f2.jpg" alt="">
+                </div>
+                <div class="contentMn">
+                    <h2>Pizza</h2>
+                    <p>Rp.50.000</p>
+                    <p class="top10">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><span>Buy</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgMn">
+                    <img src="./assets/img/f3.jpg" alt="">
+                </div>
+                <div class="contentMn">
+                    <h2>Steak</h2>
+                    <p>Rp.75.000</p>
+                    <p class="top10">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><span>Buy</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgMn">
+                    <img src="./assets/img/f4.jpg" alt="">
+                </div>
+                <div class="contentMn">
+                    <h2>Burger</h2>
+                    <p>Rp.20.000</p>
+                    <p class="top10">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><span>Buy</span></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <div id="contact">
+        <h1>Contact</h1>
+        <div class="row">
+            <div class="contact-image">
+                <img src="./assets/img/icon2.png" alt="">
+                <p>Jl.Lorem Ipsum</p>
+            </div>
+            <div class="contact-image"> 
+                <img src="./assets/img/icon1.png" alt="">
+                <p>+62 81234567</p>
+            </div>
+            <div class="contact-image">
+                <img src="./assets/img/icon3.png" alt="">
+                <p>@loremipsu</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer" style="text-align: left; padding-left: 110px; padding-right: 110px; display: flex; justify-content: space-between; font-size: 12px; font-weight: 400;">
+            <p>&#169 2020 D'fast</p>
+            <p>Design and developed by <u>Diva Wardana</u></p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
